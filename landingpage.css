@@ -163,3 +163,41 @@ select {
 .step-label.red {
     background: #dc143c;
 }
+
+.footer {
+    background-color: #660000; /* Dark red background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
