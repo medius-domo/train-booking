@@ -109,3 +109,57 @@ select {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.steps .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.step {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.step h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step p {
+    font-size: 14px;
+    color: #666;
+}
+
+.step .step-label {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.step-label.blue {
+    background: #1e90ff;
+}
+
+.step-label.green {
+    background: #32cd32;
+}
+
+.step-label.red {
+    background: #dc143c;
+}
