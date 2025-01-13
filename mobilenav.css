@@ -1,0 +1,78 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hamburger Menu Button */
+  #menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #8a1538; /* Matching train booking colors */
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Side Menu */
+  #sidemenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: #8a1538; /* Matching train booking colors */
+    color: #fff;
+    transition: right 0.6s ease;
+    z-index: 1000;
+    padding-top: 20px;
+  }
+  
+  /* Close Button */
+  #close-btn {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: right;
+  }
+  
+  /* Menu Items */
+  #sidemenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  #sidemenu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  #sidemenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #sidemenu ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Media Query for Mobile View */
+  @media screen and (max-width: 360px) {
+    #menu-btn {
+      font-size: 20px;
+    }
+  
+    #sidemenu {
+      width: 70%;
+      height: 100%;
+    }
+  }
+  
