@@ -31,6 +31,9 @@ body {
     z-index: 1000;
     padding-top: 20px;
   }
+  #sidemenu.open {
+    right: 0;
+  }
   
   /* Close Button */
   #close-btn {
