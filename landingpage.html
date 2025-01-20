@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRC Website</title>
+    
     <link rel="stylesheet" href="landingpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>TRC Website</title>
+    <script src="landingpage.js"></script>
 </head>
 
 <body>
@@ -14,12 +17,22 @@
           <img src="resources/trc-logo.png" alt="TRC Logo">
         </div>
       
-        <!-- Hamburger Menu Button -->
+        <!-- Normal Navigation Bar -->
+        <nav>
+          <ul class="desktop-nav">
+            <li><a href="#">Nyumbani</a></li>
+            <li><a href="#">Treni zilizopo</a></li>
+            <li><a href="#">Maoni</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Hamburger Menu Button (Mobile Only) -->
         <div id="menu-btn" class="hidden">
           <span>&#9776;</span>
         </div>
       
-        <!-- Side Menu -->
+        <!-- Side Menu for Mobile -->
         <nav id="sidemenu">
           <div id="close-btn">&times;</div>
           <ul>
@@ -30,6 +43,7 @@
           </ul>
         </nav>
       </header>
+      
       
 
     <section class="hero">
