@@ -38,4 +38,17 @@ $(document).ready(function () {
       }
     });
   });
+
+  $(document).ready(function () {
+    $('#checkBtn').on('click', function () {
+        // Get selected values
+        var from = $('#from').val();
+        var to = $('#to').val();
+        var passenger = $('#passenger').val(); // Capture the Abiria dropdown value
+
+        // Use alert to display the values
+        // Display all selected values
+        alert('Kutoka: ' + from + '\nKwenda: ' + to + '\nAbiria: ' + passenger);
+    });
+});
   
