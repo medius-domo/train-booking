@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="signuppage.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="signuppage.js"></script>
+
+</head>
+<body>
+  <div class="registration-container">
+    <h2>Registration Informations</h2>
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="name">Name and Surname</label>
+        <input type="text" id="name" placeholder="Please Enter Name and Surname" required>
+        <span class="error-message">The name field is required</span>
+      </div>
+      <div class="form-group">
+        <label for="identity">Identity No/Passport Number</label>
+        <input type="text" id="identity" placeholder="Please Enter Identity Number" required>
+        <span class="error-message">The identity field is required</span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Please Enter Password" required>
+        <span class="error-message">The password field is required</span>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Please Enter Phone Number" required>
+        <span class="error-message">The phone number field is required</span>
+      </div>
+      <div class="form-group">
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" placeholder="Please Enter Nationality" required>
+        <span class="error-message">The nationality field is required</span>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Please Confirm Password" required>
+        <span class="error-message">Passwords do not match</span>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+        <span class="error-message">The date of birth field is required</span>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Please Enter an E-mail" required>
+        <span class="error-message">The email field is required</span>
+      </div>
+      <div class="form-group">
+        <label>Verification</label>
+        <div>
+          <input type="checkbox" id="sms-contact">
+          <label for="sms-contact">Sms Contact</label>
+          <input type="checkbox" id="mail-contact">
+          <label for="mail-contact">Mail Contact</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I have read and accept the <a href="#">Terms & Conditions</a></label>
+        <span class="error-message">You must accept the terms and conditions</span>
+      </div>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
+</body>
+</html>

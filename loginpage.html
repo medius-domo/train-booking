@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginpage.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="loginscripts.js"></script>
+
+</head>
+<body>
+  <div class="login-modal">
+    <div class="login-header">
+      <h2>Login</h2>
+      <span class="close-btn">&times;</span>
+    </div>
+    <div class="login-toggle">
+      <button id="email-btn" class="toggle-btn active">E-mail</button>
+      <button id="mobile-btn" class="toggle-btn">Mobile</button>
+    </div>
+    <form class="login-form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Please Enter Password" required>
+      <div class="remember-me">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+      </div>
+      <a href="#" class="forgot-password">Forgot password</a>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div class="sign-up">
+      Don't have an account? <a href="signuppage.html">Sign up</a>
+    </div>
+    <footer>Dev Medius 2025</footer>
+  </div>
+</body>
+</html>
